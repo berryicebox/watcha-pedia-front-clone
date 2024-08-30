@@ -219,3 +219,26 @@ footer{
     font-size: 1.5rem;
     cursor: pointer;
 }
+
+/* section */
+#main-section {
+    display: flex;
+    margin: 0 10rem;
+}
+
+/* 이벤트 배너 */
+#event-bottom{
+    margin: 2rem 0;
+}
+
+#event-figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#event-figure img{
+    border-radius: 10px;
+    width: 100%;
+    object-fit: contain;
+}
