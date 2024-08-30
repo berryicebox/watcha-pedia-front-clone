@@ -222,7 +222,6 @@ footer{
 
 /* section */
 #main-section {
-    display: flex;
     margin: 0 10rem;
 }
 
