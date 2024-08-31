@@ -244,11 +244,16 @@ footer{
 }
 
 /* 코멘트 */
+#total-comment-container {
+    margin-bottom: 3rem;
+}
 
 /* 코멘트 헤더 */
 #comment-header{
     display: flex;
     justify-content: space-between;
+
+    margin-bottom: 1rem;
 }
 
 #comment-header-guide p{
@@ -279,4 +284,90 @@ footer{
     padding: 5px;
     cursor: pointer;
 }
+
+/* 코멘트 섹션 */
+#comment-list {
+    padding: 0;
+
+    display: flex;
+    gap: 2%;
+}
+
+.comment-article {
+    border: 0.1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1rem 1rem 0.5rem 1rem;
+    color: #848485;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* 코멘트 헤더 - 닉네임 */
+.comment-name-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.7rem;
+
+    font-size: 0.8rem;    
+}
+
+.comment-profile-box {
+    display: flex;
+}
+
+.comment-profile-box img {
+    border-radius: 20px;
+}
+
+.comment-profile-box p {
+    margin-left: 5px;
+}
+
+/* 코멘트 섹션 - 코멘트 */
+.comment-c-container {
+    display: flex;
+    margin-bottom: 0.7rem;
+}
+
+.comment-c-container div {
+    margin-left: 5px;
+}
+
+.comment-c-container .content-title {
+    font-weight: 600;
+    color: rgb(94, 93, 93);
+}
+
+.comment-c-container .content-comment {
+    font-size: 0.85rem;
+}
+
+/* 코멘트 푸터 - 추천, 대댓 */
+.comment-count-container {
+    display: flex;
+    padding-top: 0.3rem;
+    border-top: 0.1px solid #e0e0e0;
+
+    font-size: 0.9rem;
+}
+
+.comment-count-container div {
+    display: flex;
+}
+
+.comment-count-container .thumbs-up {
+    margin-right: 0.3rem;
+}
+
+.comment-count-container i {
+    padding: 5px;
+}
+
+.comment-count-container p {
+    padding: 2px;
+}
+
+
+
 
