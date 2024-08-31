@@ -5,6 +5,7 @@
     margin: 0;
     border: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 li {list-style: none;}
@@ -241,3 +242,41 @@ footer{
     width: 100%;
     object-fit: contain;
 }
+
+/* 코멘트 */
+
+/* 코멘트 헤더 */
+#comment-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+#comment-header-guide p{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+#comment-header-guide{
+    display: flex;
+}
+
+#comment-header .fa-question{
+    padding: 7px;
+    color: #848485;
+    cursor: pointer;
+}
+
+#guide{
+    display: none;
+}
+
+#total-comment-link{
+    display: flex;
+    color: #848485;;
+}
+
+#total-comment-link .fa-angle-right{
+    padding: 5px;
+    cursor: pointer;
+}
+
