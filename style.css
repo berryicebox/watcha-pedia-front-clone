@@ -21,7 +21,7 @@ body {
 
 /* 헤더 */
 header {
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid lightgray;
 }
 
 header nav {
@@ -384,12 +384,11 @@ footer{
     padding: 0;
 
     display: flex;
-    gap: 1rem;
+    gap: 10px;
 }
 
 .rank-list li {
     width: 20%;
-    /* width: calc((100%-10rem) / 5); */
 }
 
 /* 포스터 */
@@ -401,12 +400,14 @@ footer{
 .poster-box{
     display: flex;
     flex-direction: column;
+    width: 100%;
 
     position: relative;
 }
 
 .poster-box img{
     border-radius: 5px;
+    width: 100%;
 }
 
 .poster-box p {
@@ -439,4 +440,87 @@ footer{
 .title-box p:last-child{
     font-size: 0.8rem;
     color:#848485;
+}
+
+/* 공개예정작 섹션 */
+#open-soon-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#open-soon-list {
+    display: flex;
+    padding: 0;
+
+    gap: 10px;
+}
+
+#open-soon-list li{
+    /* width: cal(20%-10px); */
+    width: 20%;
+}
+
+#open-soon-list li .content-container{
+    display: flex;
+    flex-direction: column;
+}
+
+/* title-container */
+#open-soon-title {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 1rem;
+}
+
+#open-soon-title p {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+#open-soon-title div{
+    padding: 7px;
+    color: #848485;
+    cursor: pointer;
+}
+
+/* open-soon-list */
+/* poster-box */
+#open-soon-list li .poster-box {
+    width: 100%;
+}
+
+#open-soon-list li .poster-box img {
+    width: 100%;
+}
+
+#open-soon-list li .poster-box p {
+    width: 40px; height: 28px;
+}
+
+/* button-box */
+#wanna-watch-box {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0.5rem;
+    color: white;
+    background-color: #272727;
+    font-size: 1rem;
+    margin-top: -7px;
+    border-radius: 0 0 5px 5px;
+}
+
+#wanna-watch-box > span {
+    font-weight: 600;
+}
+
+/* 타이틀 박스 */
+#open-soon-list #title-where {
+    color: black;
+    font-size: 1rem;
+}
+
+#open-soon-list #title-where span {
+    color: #ff256e;
 }

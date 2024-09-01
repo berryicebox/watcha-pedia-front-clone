@@ -54,4 +54,28 @@
                             - ul
                                 - li 예매율
                                 - li 누적관객수
+    #공개예정작
+    - div 공개 예정작 영역 id="open-soon-container" class="rank-container"
+        - div 타이틀 컨테이너 id="open-soon-title"  class="title-container"
+            - p 공개예정작
+            - div
+                - span 더보기
+                - i
+        - section 본문 컨테이너
+            - ul 영화 리스트 id="open-soon-list" class="rank-list"
+                - li
+                    - div 포스터 컨테이너 class="poster-box"
+                        - span 숫자
+                        - a 링크
+                            - img 포스터 
+                    - button 보고싶어요 컨테이너 id="wanna-watch-box"
+                        - div 플러스
+                            - img
+                            - span 보고싶어요
+                        - span 숫자
+                    - div 영화정보 컨테이너 class="title-box"
+                        - p 영화 제목
+                        - p 극장 span 날짜
 
+#메모
+- d-1 padding 값 수정
