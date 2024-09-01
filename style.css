@@ -465,6 +465,10 @@ footer{
     flex-direction: column;
 }
 
+#open-soon-list .poster-box img{
+    border-radius: 5px 5px 0 0;
+}
+
 /* title-container */
 #open-soon-title {
     display: flex;
@@ -524,3 +528,76 @@ footer{
 #open-soon-list #title-where span {
     color: #ff256e;
 }
+
+/* 이벤트 배너 2 */
+#event-second-box {
+    width: 100%;
+    height: 340px;
+
+    display: flex;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+}
+
+/* 이벤트 이미지 박스 */
+#event-image-box {
+    background-image: url(https://an2-img.amz.wtchn.net/image/v2/MyrUXF8_GPaGrq0hagNRpg.png?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKd0lqb2lMM1l5TDNOMGIzSmxMM0J5YjIxdmRHbHZiaTh4TWpneE1USTBORFV6TVRJeU1qQTFOaUo5LlE2VHV5aUVCanllb2IwX3ZyMjJXYU5yUUlTU2JRVzhvQUctMHROM3JXbkE);
+    width: 60%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 5px 0 0 5px;
+}
+
+/* 이벤트 텍스트 박스 */
+#event-text-box {
+    width: 40%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #e0e0e0;
+    border-radius: 0 5px 5px 0;
+}
+
+#event-text-box > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#event-text-box > div p {
+    color: black;
+}
+
+#event-text-box > div > p:nth-child(2){
+    color: rgb(138, 137, 137);
+    font-size: 1.2rem;
+}
+
+#circle-logo-box {
+    display: flex;
+    margin-top: 0.5rem;
+}
+
+#circle-logo-box img {
+    width: 1.2rem;
+    margin-right: 3px;
+}
+
+#circle-logo-box p {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+#event-text-box > p {
+    background-color: #ff256e;
+    color: white;
+    padding: 0.5rem 6rem;
+    border-radius: 5px;
+    
+    margin-top: 1rem;
+}
+
