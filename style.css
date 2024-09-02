@@ -397,12 +397,40 @@ footer{
     /* width: 100%; */
 }
 
+/* 슬라이더 */
 #boxoffice-list{
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.8s ease-in-out;
 }
 
-/* 5배수인 li만 gqp x? or flex 값 다르게 */
+/* 슬라이더 버튼 */
+#boxoffice-list section {
+    position: relative;
+}
+
+#boxoffice-slider-button{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+
+    top: 40%;
+    left: 0;
+    right: 0;
+
+    padding-right: 1.4rem;
+    padding-left: 0.5rem;
+    width: 100%;
+}
+
+.slider-button{
+    border-radius: 50%;
+    padding: 0.7rem;
+    color:#e0e0e0;
+    font-size: 1rem;
+    background-color: white;
+    cursor: pointer;
+    /* box-shadow: 2px 0 10px #848485; */
+}
 
 /* 포스터 */
 .poster-link {
