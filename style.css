@@ -369,10 +369,6 @@ footer{
 }
 
 /* 박스오피스 순위 */
-#boxoffice-container{
-    margin-bottom: 3rem;
-}
-
 .rank-container > p {
     font-weight: 600;
     font-size: 1.2rem;
@@ -384,12 +380,29 @@ footer{
     padding: 0;
 
     display: flex;
-    gap: 10px;
+    gap: 1%;
 }
 
 .rank-list li {
-    width: 20%;
+    /* width: 20%; */
+    flex: 0 0 19%;
 }
+
+#boxoffice-container{
+    margin-bottom: 3rem;
+
+    /* 슬라이더 */
+    position: relative;
+    overflow: hidden;
+    /* width: 100%; */
+}
+
+#boxoffice-list{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* 5배수인 li만 gqp x? or flex 값 다르게 */
 
 /* 포스터 */
 .poster-link {

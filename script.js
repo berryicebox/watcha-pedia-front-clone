@@ -1,15 +1,12 @@
-// json 데이터 박스오피스란에 붙여넣기
 document.addEventListener('DOMContentLoaded', () => {
     fetch('movie.json')
-        .then(response => {
-            return response.json(); // JSON 데이터로 변환
-        })
+        .then(response => response.json())
         .then(data => {
-            // 데이터에서 처음 5개 항목만 선택
-            const top5Movies = data.slice(0, 5);
+            // 데이터에서 처음 20개 항목만 선택
+            const top20Movies = data.slice(0, 20);
             const boxofficeList = document.getElementById('boxoffice-list');
 
-            top5Movies.forEach((movie, index) => {
+            top20Movies.forEach((movie, index) => {
                 // 포스터 이미지 URL을 구성
                 const imageUrl = `https://image.tmdb.org/t/p/w500${movie.posterPath}`;
                 // 영화 정보
@@ -24,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <a class="poster-link" href="${imageUrl}">
                         <!-- 포스터 칸 -->
                         <div class="poster-box">
-                            <img src="${imageUrl}" alt="${title}" height=   "360">
+                            <img src="${imageUrl}" alt="${title}" height="360">
                             <p>${index + 1}</p> <!-- 순위 표시 -->
                         </div>
                         <!-- 영화 타이틀 -->
@@ -39,5 +36,44 @@ document.addEventListener('DOMContentLoaded', () => {
                 // 목록에 추가
                 boxofficeList.appendChild(listItem);
             });
+
+            // 슬라이더 관련 코드
+            const list = document.getElementById('boxoffice-list');
+            const items = list.querySelectorAll('li');
+            const itemCount = items.length;
+            const visibleCount = 5; // 한 번에 보여줄 항목의 수
+            const totalSlides = Math.ceil(itemCount / visibleCount);
+            let currentSlide = 0;
+
+            // 슬라이드 버튼
+            const prevButton = document.getElementById('prev-slide');
+            const nextButton = document.getElementById('next-slide');
+
+            // 버튼 클릭 이벤트 핸들러
+            prevButton.addEventListener('click', () => {
+                if (currentSlide > 0) {
+                    currentSlide--;
+                    updateSlider();
+                }
+            });
+
+            nextButton.addEventListener('click', () => {
+                if (currentSlide < totalSlides - 1) {
+                    currentSlide++;
+                    updateSlider();
+                }
+            });
+
+            // 슬라이더 업데이트 함수
+            function updateSlider() {
+                const offset = -currentSlide * (500 / visibleCount);
+                list.style.transform = `translateX(${offset}%)`;
+            }
+
+            // 초기 슬라이더 상태 설정
+            updateSlider();
         })
+        .catch(error => {
+            console.error('Error fetching data:', error);
+        });
 });
