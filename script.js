@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             top5Movies.forEach((movie, index) => {
                 // 포스터 이미지 URL을 구성
-                const imageUrl = `https://image.tmdb.org/t/p/w300${movie.posterPath}`;
+                const imageUrl = `https://image.tmdb.org/t/p/w500${movie.posterPath}`;
                 // 영화 정보
                 const title = movie.title;
                 const releaseDate = movie.releaseDate;
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const listItem = document.createElement('li');
 
                 listItem.innerHTML = `
-                    <a class="poster-link" href="https://pedia.watcha.com/ko-KR">
+                    <a class="poster-link" href="${imageUrl}">
                         <!-- 포스터 칸 -->
                         <div class="poster-box">
                             <img src="${imageUrl}" alt="${title}" height=   "360">
