@@ -403,6 +403,8 @@ footer{
     width: 100%;
 
     position: relative;
+
+    margin-bottom: 0.5rem;
 }
 
 .poster-box img{
@@ -431,6 +433,7 @@ footer{
 
 .title-box p:first-child{
     font-size: 1.1rem;
+    font-weight: 600;
 }
 
 .title-box p:nth-child(2){
@@ -492,6 +495,7 @@ footer{
 /* poster-box */
 #open-soon-list li .poster-box {
     width: 100%;
+    margin-bottom: 0;
 }
 
 #open-soon-list li .poster-box img {
@@ -542,7 +546,7 @@ footer{
 /* 이벤트 이미지 박스 */
 #event-image-box {
     background-image: url(https://an2-img.amz.wtchn.net/image/v2/MyrUXF8_GPaGrq0hagNRpg.png?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKd0lqb2lMM1l5TDNOMGIzSmxMM0J5YjIxdmRHbHZiaTh4TWpneE1USTBORFV6TVRJeU1qQTFOaUo5LlE2VHV5aUVCanllb2IwX3ZyMjJXYU5yUUlTU2JRVzhvQUctMHROM3JXbkE);
-    width: 60%;
+    width: 50%;
     height: 100%;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -551,7 +555,7 @@ footer{
 
 /* 이벤트 텍스트 박스 */
 #event-text-box {
-    width: 40%; 
+    width: 50%; 
     display: flex;
     flex-direction: column;
     justify-content: center;
