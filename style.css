@@ -307,9 +307,10 @@ footer{
     display: flex;
 }
 
-#comment-header .fa-question{
-    padding: 7px;
-    color: #848485;
+#comment-header .fa-circle-exclamation{
+    padding: 6px;
+    padding-left: 10px;
+    color: #afafb1;
     cursor: pointer;
 }
 
@@ -465,11 +466,11 @@ footer{
 }
 
 .slider-button{
-    border-radius: 50%;
+    border-radius: 30%;
     padding: 0.7rem;
-    color:#e0e0e0;
+    color:#383838;
     font-size: 1rem;
-    background-color: white;
+    background-color: rgb(230, 230, 230, 0.6);
     cursor: pointer;
     /* box-shadow: 2px 0 10px #848485; */
 }
