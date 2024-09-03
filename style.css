@@ -72,12 +72,38 @@ header nav #form #form-box {
     gap: 1%;
 }
 
-#search-form input[type="search"]{
-    background-color: rgb(247, 246, 246);
-    padding: 0.5rem;
-    width: 250px;
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration{
+    /* 검색창 default clear 제거 */
+    display:none;
+}
 
+#search-form {
+    position: relative;
+}
+
+#search-form input{
+    background-color: rgb(247, 246, 246);
+    outline: none;
+    color: #696969;
+
+    padding: 0.5rem;
+    padding-right: 2rem;
+    width: 250px;
     margin-top: 3px;
+}
+
+#search-form button{
+    position: absolute;
+    top: 0.7rem;
+    right: 0;
+    
+    background-color: rgb(247, 246, 246);
+    font-size: 1rem;
+    color:#a7a7a8;
+    cursor: pointer;
 }
 
 #login-form input[type="button"]{

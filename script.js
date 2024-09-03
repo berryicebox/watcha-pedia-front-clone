@@ -73,7 +73,29 @@ document.addEventListener('DOMContentLoaded', () => {
             // 초기 슬라이더 상태 설정
             updateSlider();
         })
+
         .catch(error => {
             console.error('Error fetching data:', error);
         });
+});
+
+// clearbutton의 clear효과 적용
+function clearInput() {
+    // 입력 필드의 값을 기존의 value로 바꾸기
+    const inputField = document.querySelector('#search-form input');
+    inputField.value = "콘텐츠, 인물, 위치, 유저를 검색해보세요";
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    // 버튼 클릭 이벤트 핸들러 추가
+    const clearButton = document.querySelector('.clear-button');
+    clearButton.addEventListener('click', clearInput);
+
+    // 입력 필드에 입력이 시작될 때 value를 지우는 이벤트 핸들러 추가
+    const searchInput = document.querySelector('#search-input');
+    searchInput.addEventListener('focus', () => {
+        if (searchInput.value === "콘텐츠, 인물, 위치, 유저를 검색해보세요") {
+            searchInput.value = "";
+        }
+    });
 });
